@@ -1,0 +1,12 @@
+  .header__logo {
+    @include text(1.25rem, $font__weight--bold, $font__family--primary, $color__primary, $line__height--base);
+    float: left;
+    margin: 10px 0;
+    text-transform: uppercase;
+    span {
+      font-weight: $font__weight--light;
+    }
+    &:hover {
+      color: $color__accent;
+    }
+  }

@@ -1,0 +1,39 @@
+<!-- Main Banner -->
+<section class="container">
+  <div class="main-banner">
+    <div class="main-banner__text">
+      <h1>web design, development &amp; <span>marketing</span></h1>
+      <p>Helping small business and Entrepreneurs live out their passions and bring excellence to the market place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Me and Benefits -->
+<section class="intro">
+  <div class="container">
+    <div class="intro__paragraph col-sm-12">
+      <h2>grow your business to reflect your passions and bring real value to the market place.</h2>
+      <p>Small business and Entrepreneurs are the backbone of our economy. Having been in the private sector market for years, working with small businesses, and building my own business ventures, I have learned what it takes to grow and do business in this economy. My goal is to help you do this by strategizing your business plan, developing a solid web presence, and marketing it through all areas of contact with people.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Work -->
+<section class="recent-work" ng-controller="recentWorkItemCtrl">
+  <div class="container">
+    <h2>my recent work</h2>
+
+    <div class="row">
+      <a ng-href="{{'#/work/' + workItem.id}}" class="work__item" ng-repeat="workItem in workItems">
+        <img ng-src="{{workItem.thumbURL}}" alt="{{workItem.name}}">
+        <div class="work__item--overlay">
+          <div class="work__item--overlay--text">
+            <h3>{{workItem.name}}</h3>
+            <p>{{workItem.tagline}}</p>
+          </div>
+        </div>			
+      </a>
+    </div>
+
+  </div>
+</section>

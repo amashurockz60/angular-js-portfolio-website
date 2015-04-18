@@ -1,0 +1,15 @@
+.footer {
+  background: rgba(0, 0, 0, .9);
+  margin-top: 50px;
+  img {
+    display: block;
+    float: left;
+    height: 25px;
+    margin: 25px 0;
+  }
+  p {
+    @include text(.9rem, $font__weight--bold, $font__family--primary, $color__light, $line__height--base);
+    float: right;
+    margin: 25px 0;
+  }
+}

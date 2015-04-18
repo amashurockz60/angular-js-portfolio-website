@@ -1,0 +1,57 @@
+// Default Global Styles
+// Please Use Element Selectors Only
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $font__family--secondary;
+  font-size: $font__size--base;
+  font-weight: $font__weight--medium;
+  line-height: $line__height--base;
+}
+
+h1 {
+  font-family: $font__family--primary;
+  font-size: $font__size--headline;
+  font-weight: $font__weight--bold;
+}
+
+h2 {
+  font-family: $font__family--primary;
+  font-size: $font__size--base;
+  font-weight: $font__weight--bold;
+}
+
+p {
+  font-family: $font__family--secondary;
+  font-size: $font__size--base;
+  font-weight: $font__weight--medium;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Links
+a {
+  color: $color__primary;
+  text-decoration: none;
+  
+  &:hover {
+    color: $color__accent;
+  }
+  &:active {
+    color: $color__accent;
+  }
+  &:visited {
+    color: $color__primary;
+  }
+  &:focus {
+    color: $color__accent;
+  }
+}

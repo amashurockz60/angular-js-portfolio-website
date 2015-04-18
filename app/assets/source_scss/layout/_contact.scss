@@ -1,0 +1,6 @@
+.contact {
+  h1 {
+    @include page-header();
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,12 @@
+<section class="work-page" ng-controller="workPageCtrl">
+  <div class="container">
+    <h1>{{selectedWork.title}}</h1>
+    <p>{{selectedWork.description}}</p>
+    <a ng-show="selectedWork.url" ng-href="{{selectedWork.url}}">{{selectedWork.urlTitle}}</a>
+    <div class="work-page__photos">
+      <img ng-src="{{selectedWork.photo1}}">
+      <img ng-src="{{selectedWork.photo2}}">
+      <img ng-src="{{selectedWork.photo3}}">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+//===== Import Styles For Modules Folder =====//
+// Module Styles Should Have No Knowledge of Their Parent Container. Re-usable Anywhere on The Page.
+
+@import 'header__logo';
+
+@import 'header__nav';
+
+@import 'main-banner__text';
+
+@import 'intro__paragraph';
+
+@import 'work__item';
+
+@import 'work-page__photos';
+
+@import 'services__item';
+
+@import 'process__item';
+
+@import 'contact__info';
+
+@import 'contact__form';
+
+@import 'ngAnimate';

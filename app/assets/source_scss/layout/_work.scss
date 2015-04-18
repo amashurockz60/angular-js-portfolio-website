@@ -1,0 +1,33 @@
+.work {
+  min-height: 900px;
+  h1 {
+    @include page-header();
+  }
+  .work__filter {
+    display: inline-block;
+    width: 100px;
+    @include text(1rem, $font__weight--bold, $font__family--primary, $color__light, $line__height--base);
+    background: $color__primary;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 5px;
+    &:hover {
+      background: $color__accent;
+    }
+  }
+  input {
+    @include text(14px, $font__weight--bold, $font__family--secondary, $color__secondary, $line__height--base);
+    background: url('../img/input-bg.png');
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+  }
+  input:focus {
+    background: url('../img/input-bg-focus.png');
+    color: $color__light;
+  }
+  .row {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,58 @@
+.work__item {
+  display: inline-block;
+  position: relative;
+  width: 48%;
+  height: auto;
+  background: #000;
+  text-align: center;
+  margin: 1%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  img {
+    display: block;
+    opacity: .50;
+    transition: all 0.35s;
+  }
+}
+.work__item:hover img {
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+  opacity: .25;
+}
+.work__item:hover .work__item--overlay--text {
+  opacity: 1;
+}
+.work__item--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.work__item--overlay--text {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.35s;
+  h3 {
+    @include text(1.25rem, $font__weight--bold, $font__family--primary, $color__light, $line__height--base);
+    text-transform: uppercase;
+    margin: 0;
+  }
+  p {
+    @include text(1rem, $font__weight--bold, $font__family--secondary, $color__light, $line__height--base);
+    text-transform: capitalize;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .work__item {
+    width: 100%;
+    margin: 0;
+  }
+}

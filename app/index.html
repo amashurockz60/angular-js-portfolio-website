@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AKMSApp">
+  <head ng-controller="headCtrl">
+    <meta charset="utf-8">
+    <title ng-bind="title"></title>
+    <meta name="description" content="{{description}}">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    
+    <!-- One Request For All CSS Concatenated And Minified -->
+    <link href="assets/css/styles.min.css" rel="stylesheet">
+    
+    <!-- Browser and Android Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    
+    <!-- Apple Touch Icons -->
+    <meta name="apple-mobile-web-app-title" content="AK Marketing Solutions">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon-180x180.png">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="index.html#/">ak marketing <span>solutions</span></a> 
+        <nav class="header__nav">
+          <ul>
+            <li class="nav_li"><a href="#/services">services</a></li>
+            <li class="nav_li"><a href="#/work">work</a></li>
+            <li class="nav_li"><a href="#/contact">contact</a></li>
+          </ul>
+        </nav>
+        <img src="assets/img/divider-skinny.png">
+      </div>
+    </header>
+    
+    <div ng-view></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <img src="assets/img/credit-cards.png" alt="Payment Options">
+        <p>&copy; AK Marketing Solutions. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <!-- One Request For All JavaScript Concatenated -->
+    <script src="assets/js/scripts.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!-- Work -->
+<section class="work" ng-controller="workCtrl">
+  <div class="container">
+    <h1>work</h1>
+    <a class="work__filter" href="" ng-repeat="filter in filters" ng-click="setFilter(filter)">{{filter.name}}</a>
+    <input type="text" ng-model="queryString" placeholder="Search">
+
+    <div class="row">
+      <a ng-href="{{'#/work/' + workItem.id}}" class="work__item" ng-repeat="workItem in workItems | filter:selectedFilter.filterExpr | filter:queryString">
+        <img ng-src="{{workItem.thumbURL}}" alt="{{workItem.name}}">
+        <div class="work__item--overlay">
+          <div class="work__item--overlay--text">
+            <h3>{{workItem.name}}</h3>
+            <p>{{workItem.tagline}}</p>
+          </div>
+        </div>			
+      </a>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ak-marketing-solutions",
+    "name": "ak marketing solutions",
+    "tagline": "web development & marketing",
+    "description": "The web site for AK Marketing Solutions was built from scratch using AngularJS and jQuery. Portfolio items and information are stored in a JSON object and are filtered in accordance with the selected filter. All portfolio items have the same HTML page template that gets populated with information from the currently selected JSON item by using AngularJS routeParams. ngShow is also utilized to only show links or photos if a true value exists in the JSON object.",
+    "category": ["web", "code"],
+    "thumbURL": "assets/img/projects/akms-website-thumb.jpg",
+    "photo1": "assets/img/projects/akms-website-large.jpg",
+    "photo2": "assets/img/projects/akms-code-large.jpg"
+  },
+  {
+    "id": "rhino-workflow",
+    "name": "rhino workflow",
+    "tagline": "web development workflow",
+    "description": "Rhino Workflow is a web development workflow I created that uses the GULP task runner, SASS, BEM and SMACSS methodologies to make an extremely modular and organized file structure. I designed this web page to have a simple introduction and download link to the latest version that is grabbed via AJAX request through the Github API.",
+    "url": "http://rhinoworkflow.com",
+    "urlTitle": "visit site",
+    "category": ["web", "code"],
+    "thumbURL": "assets/img/projects/rw-website-thumb.jpg",
+    "photo1": "assets/img/projects/rw-website-large.jpg",
+    "photo2": "assets/img/projects/rw-code-large.jpg"
+  },
+  {
+    "id": "kenny-industrial",
+    "name": "kenny industrial",
+    "tagline": "aggregate & industrial supplies",
+    "description": "Kenny Industrial needed their 10 year old website and line card to be updated and reflect the level of their business. I made them a new web site from scratch that integrated better organization and all the best SEO practices. With responsive web design, their site is now able to be viewed across every device and screen width. I re-made their logo to display sharper on today's modern high definition screens. They can now be proud of the online presence their company has. I also designed a new line card for them that maintains the visual identity of their new website.",
+    "url": "http://kennyindustrial.com",
+    "urlTitle": "visit site",
+    "category": ["web", "print"],
+    "thumbURL": "assets/img/projects/ki-website-thumb.jpg",
+    "photo1": "assets/img/projects/ki-website-large.jpg",
+    "photo2": "assets/img/projects/ki-line-card-large.jpg"
+  }
+]

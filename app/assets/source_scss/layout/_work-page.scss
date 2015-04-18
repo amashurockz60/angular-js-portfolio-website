@@ -1,0 +1,19 @@
+.work-page {
+  h1 {
+    @include page-header();
+  }
+  p {
+    @include text(1rem, $font__weight--bold, $font__family--secondary, $color__accent, $line__height--base);
+  }
+  a {
+    display: inline-block;
+    @include text(1rem, $font__weight--bold, $font__family--primary, $color__light, $line__height--base);
+    background: $color__primary;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    &:hover {
+      background: $color__accent;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.services-intro {
+  h1 {
+    @include page-header();
+  }
+}

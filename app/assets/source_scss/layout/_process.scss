@@ -1,0 +1,9 @@
+.process {
+  margin-top: 50px;
+  h2 {
+    @include text(1.25rem, $font__weight--bold, $font__family--primary, $color__light, $line__height--base);
+    background: rgba(0, 0, 0, .9);
+    text-transform: uppercase;
+    padding: 5px 0 5px 15px;
+  }
+}

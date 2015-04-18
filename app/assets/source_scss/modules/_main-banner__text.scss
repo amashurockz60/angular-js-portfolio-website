@@ -1,0 +1,16 @@
+.main-banner__text {
+  position: relative;
+  top: 150px;
+  margin: 0 25px;
+  h1 {
+    @include text(2rem, $font__weight--bold, $font__family--primary, $color__light, 2.25rem);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    span {
+      font-weight: 300;
+    }
+  }
+  p {
+    @include text(1rem, $font__weight--bold, $font__family--secondary, $color__light, $line__height--base);
+  }
+}
