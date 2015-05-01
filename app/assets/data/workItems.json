@@ -1,9 +1,20 @@
 [
   {
+    "id": "grove-bulletin",
+    "name": "grove church bulletin",
+    "tagline": "windows phone app",
+    "description": "The Grove Community Church sends out a weekly bulletin through a third party. However, they do not have a native solution for users with Windows Phones. I created a native Windows Phone 8 application with JavaScript that provides an easy solution to get the most recent bulletin directly on their phones.",
+    "category": ["web", "code"],
+    "thumbURL": "assets/img/projects/gb-app-thumb.jpg",
+    "photo1": "assets/img/projects/gb-phone.png"
+  },
+  {
     "id": "ak-marketing-solutions",
     "name": "ak marketing solutions",
     "tagline": "web development & marketing",
     "description": "The web site for AK Marketing Solutions was built from scratch using AngularJS and jQuery. Portfolio items and information are stored in a JSON object and are filtered in accordance with the selected filter. All portfolio items have the same HTML page template that gets populated with information from the currently selected JSON item by using AngularJS routeParams. ngShow is also utilized to only show links or photos if a true value exists in the JSON object.",
+    "url": "https://github.com/aaronk9511/AngularJS-Portfolio-Website/blob/master/app/assets/source_js/angular-controllers.js",
+    "urlTitle": "view source code",
     "category": ["web", "code"],
     "thumbURL": "assets/img/projects/akms-website-thumb.jpg",
     "photo1": "assets/img/projects/akms-website-large.jpg",
@@ -25,12 +36,9 @@
     "id": "kenny-industrial",
     "name": "kenny industrial",
     "tagline": "aggregate & industrial supplies",
-    "description": "Kenny Industrial needed their 10 year old website and line card to be updated and reflect the level of their business. I made them a new web site from scratch that integrated better organization and all the best SEO practices. With responsive web design, their site is now able to be viewed across every device and screen width. I re-made their logo to display sharper on today's modern high definition screens. They can now be proud of the online presence their company has. I also designed a new line card for them that maintains the visual identity of their new website.",
-    "url": "http://kennyindustrial.com",
-    "urlTitle": "visit site",
-    "category": ["web", "print"],
+    "description": "Kenny Industrial needed their 10 year old line card updated to reflect the level of their business. I created a modern and clean design that reflects the current industry.",
+    "category": ["print"],
     "thumbURL": "assets/img/projects/ki-website-thumb.jpg",
-    "photo1": "assets/img/projects/ki-website-large.jpg",
-    "photo2": "assets/img/projects/ki-line-card-large.jpg"
+    "photo1": "assets/img/projects/ki-line-card-large.jpg"
   }
 ]

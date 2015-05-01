@@ -27,27 +27,13 @@
           <input type="submit" name="submit" value="submit">
         </form>
         <!-- Contact Form 'Hire Me' -->
-        <form  id="form2" method="post" action="assets/php/contact__form.php" name="contactForm">
+        <form  id="form2" method="post" action="assets/php/contact__form2.php" name="contactForm">
           <div class="contact__form--text">
-            <input type="text" name="contactName" placeholder="Your Name" id="contactName">
-            <input type="email" name="contactEmail" placeholder="Your Email" id="contactEmail"><br>
+            <input type="text" name="contactName" placeholder="Your Name" id="contactName2">
+            <input type="email" name="contactEmail" placeholder="Your Email" id="contactEmail2"><br>
             <input type="text" name="contactWebsite" placeholder="Your Website" id="contactWebsite">
-            <select name="projectScope" id="projectScope">
-              <option disabled selected value="">Select Project Category</option>
-              <option value="web">Web Design &amp; Development</option>
-              <option value="print">Marketing Materials</option>
-              <option value="seo">SEO &amp; Online Marketing</option>
-              <option value="consult">Business Consulting</option>
-            </select><br>
             <input type="text" name="projectBudget" placeholder="Project Budget" id="projectBudget">
-            <select name="projectTime" id="projectTime">
-              <option disabled selected value="">Select Project Timeline</option>
-              <option value="no timeline">No Timeline</option>
-              <option value="2 weeks">2 Weeks</option>
-              <option value="1 month">1 Month</option>
-              <option value="1-6 months">1-6 Months</option>
-            </select><br>
-            <textarea id="messageContent" name="messageContent" placeholder="Type Your Message Here"></textarea>
+            <textarea id="messageContent2" name="messageContent" placeholder="Type Your Message Here"></textarea>
           </div>
           <input type="submit" name="submit" value="submit">
         </form>

@@ -1294,7 +1294,7 @@ AKMSApp.config(function($routeProvider){
     })
     .when("/work/:workId",
     {
-      "templateUrl": "assets/views/work-page.html",
+      "templateUrl": "assets/views/work-page.html"
     })
     .when("/contact",
     {
@@ -1375,16 +1375,12 @@ AKMSControllers.controller("workPageCtrl", function($scope, $http, $routeParams)
 AKMSControllers.controller("contactFormCtrl", function($scope){
   //JQuery Form Control
   $('#form2').hide().css({
-    opacity: 0,
-    width: "50%",
-    height: "50%"
+    opacity: 0
   });
   $('#form2Btn').click(function(){
     $('#form1').hide();
     $('#form2').show().animate({
-      opacity: 1,
-      width: "100%",
-      height: "100%"
+      opacity: 1
     }, 1500);
     $('#form1Btn').removeClass('formBtn-active').addClass('formBtn-inactive');
     $('#form2Btn').removeClass('formBtn-inactive').addClass('formBtn-active');
@@ -1399,37 +1395,47 @@ AKMSControllers.controller("contactFormCtrl", function($scope){
   
   //JQuery Form 1 Send Control
   $('#form1').submit(function(){
-    $.ajax({
-      'url'    : $(this).attr('action'),
-      'type'   : $(this).attr('method'),
-      'data'   : $(this).serialize(),
-      'success': function(data){
-        $('#form1 input[type="submit"]').attr('value', 'form sent!').css('pointer-events', 'none');
-        $('#form1')[0].reset();
-        $('#form1').append('<p>Thanks for contacting me, I will get back to you as soon as possible.</p>');
-      },
-      error  : function(){
-        $('#form1').append('<p>Something went wrong, please refresh the page and try again.</p>');
-      }
-    });
-    return false;
+    if ($('#contactName').val() != "" && $('#contactEmail').val() != "" && $('#messageContent').val() != ""){
+      $.ajax({
+        'url'    : $(this).attr('action'),
+        'type'   : $(this).attr('method'),
+        'data'   : $(this).serialize(),
+        'success': function(data){
+          $('#form1 input[type="submit"]').attr('value', 'form sent!').css('pointer-events', 'none');
+          $('#form1')[0].reset();
+          $('#form1').append('<p>Thanks for contacting me, I will get back to you as soon as possible.</p>');
+        },
+        error  : function(){
+          $('#form1').append('<p>Something went wrong, please refresh the page and try again.</p>');
+        }
+      });
+      return false;
+    } else {
+      $('#form1').append('<p style="color: red">Name, Email, and Message must be filled in</p>');
+      return false;
+    }
   });
   //JQuery Form 2 Send Control
   $('#form2').submit(function(){
-    $.ajax({
-      'url'     : $(this).attr('action'),
-      'type'    : $(this).attr('method'),
-      'data'    : $(this).serialize(),
-      'success' : function(data){
-        $('#form2 input[type="submit"]').attr('value', 'form sent!').css('pointer-events', 'none');
-        $('#form2')[0].reset();
-        $('#form2').append('<p>Thanks for contacting me, I will get back to you as soon as possible.</p>');
-      },
-      error : function(){
-        $('#form2').append('<p>Something went wrong, please refresh the page and try again.</p>');
-      }
-    });
-    return false;
+    if ($('#contactName2').val() != "" && $('#contactEmail2').val() != "" && $('#messageContent2').val() != ""){
+      $.ajax({
+        'url'     : $(this).attr('action'),
+        'type'    : $(this).attr('method'),
+        'data'    : $(this).serialize(),
+        'success' : function(data){
+          $('#form2 input[type="submit"]').attr('value', 'form sent!').css('pointer-events', 'none');
+          $('#form2')[0].reset();
+          $('#form2').append('<p>Thanks for contacting me, I will get back to you as soon as possible.</p>');
+        },
+        error : function(){
+          $('#form2').append('<p>Something went wrong, please refresh the page and try again.</p>');
+        }
+      });
+      return false;
+    } else {
+      $('#form2').append('<p style="color: red">Name, Email, and Message must be filled in</p>');
+      return false;
+    }
   });
   
 });

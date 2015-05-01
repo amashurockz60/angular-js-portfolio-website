@@ -1,5 +1,5 @@
 // Angular App
-var AKMSApp = angular.module("AKMSApp", ["ngRoute", "AKMSControllers", "ngAnimate"]);
+var AKMSApp = angular.module("AKMSApp", ["ngRoute", "AKMSControllers"]);
 
 AKMSApp.config(function($routeProvider){
   $routeProvider
@@ -17,7 +17,7 @@ AKMSApp.config(function($routeProvider){
     })
     .when("/work/:workId",
     {
-      "templateUrl": "assets/views/work-page.html",
+      "templateUrl": "assets/views/work-page.html"
     })
     .when("/contact",
     {

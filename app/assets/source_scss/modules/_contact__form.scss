@@ -73,24 +73,6 @@
     background: url('../img/input-bg-focus.png');
     color: $color__light;
   }
-  select {
-    height: 38px;
-    width: 45%;
-    @include text(14px, $font__weight--bold, $font__family--secondary, $color__secondary, $line__height--base);
-    background: url('../img/input-bg.png');
-    padding: 5px 10px;
-    outline: none;
-    border: none;
-    margin-bottom: 25px;
-    cursor: pointer;
-  }
-  select option {
-    color: $color__secondary;
-  }
-  select:focus {
-    background: url('../img/input-bg-focus.png');
-    color: $color__light;
-  }
 }
 
 
